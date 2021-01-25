@@ -72,5 +72,15 @@
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Weather App accesses your location to get your current location to provide accurate weather conditions.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Weather App accesses your location to get your current location to provide accurate weather conditions.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Weather App accesses your location to get your current location to provide accurate weather conditions.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 </dict>
 </plist>

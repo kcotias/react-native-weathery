@@ -18,24 +18,8 @@
 		47DA1608E26FDE372C0EE57C /* libPods-weathery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 316FD5739D96F6B5AF6D1738 /* libPods-weathery.a */; };
 		6C8DF962360A1796276BB96E /* libPods-weathery-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F35342BBDE464CBA8B200285 /* libPods-weathery-tvOS.a */; };
 		7A658CE3AA866C1F147AE55D /* libPods-weathery-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 267656C82FB505DFB1C0849F /* libPods-weathery-tvOSTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F3F721D5F922CEA188A0298A /* libPods-weathery-weatheryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A7A0766E63C4D0EE2FD184 /* libPods-weathery-weatheryTests.a */; };
-		FFD5AE5025BB478C00F41A26 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4025BB478C00F41A26 /* Fontisto.ttf */; };
-		FFD5AE5125BB478C00F41A26 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4125BB478C00F41A26 /* Octicons.ttf */; };
-		FFD5AE5225BB478C00F41A26 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4225BB478C00F41A26 /* Feather.ttf */; };
-		FFD5AE5325BB478C00F41A26 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4325BB478C00F41A26 /* Entypo.ttf */; };
-		FFD5AE5425BB478C00F41A26 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4425BB478C00F41A26 /* FontAwesome5_Brands.ttf */; };
-		FFD5AE5525BB478C00F41A26 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4525BB478C00F41A26 /* MaterialCommunityIcons.ttf */; };
-		FFD5AE5625BB478C00F41A26 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4625BB478C00F41A26 /* AntDesign.ttf */; };
-		FFD5AE5725BB478C00F41A26 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4725BB478C00F41A26 /* Foundation.ttf */; };
-		FFD5AE5825BB478C00F41A26 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4825BB478C00F41A26 /* Ionicons.ttf */; };
-		FFD5AE5925BB478C00F41A26 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4925BB478C00F41A26 /* FontAwesome5_Solid.ttf */; };
-		FFD5AE5A25BB478C00F41A26 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4A25BB478C00F41A26 /* FontAwesome5_Regular.ttf */; };
-		FFD5AE5B25BB478C00F41A26 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4B25BB478C00F41A26 /* FontAwesome.ttf */; };
-		FFD5AE5C25BB478C00F41A26 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4C25BB478C00F41A26 /* Zocial.ttf */; };
-		FFD5AE5D25BB478C00F41A26 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4D25BB478C00F41A26 /* EvilIcons.ttf */; };
-		FFD5AE5E25BB478C00F41A26 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4E25BB478C00F41A26 /* SimpleLineIcons.ttf */; };
-		FFD5AE5F25BB478C00F41A26 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD5AE4F25BB478C00F41A26 /* MaterialIcons.ttf */; };
+		FF81690025BE2F51004477A3 /* anything.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8168FF25BE2F51004477A3 /* anything.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +67,8 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2EB77A81BE5DD54CC1D10BF /* Pods-weathery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weathery.debug.xcconfig"; path = "Target Support Files/Pods-weathery/Pods-weathery.debug.xcconfig"; sourceTree = "<group>"; };
 		F35342BBDE464CBA8B200285 /* libPods-weathery-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weathery-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8168FE25BE2F51004477A3 /* weathery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weathery-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF8168FF25BE2F51004477A3 /* anything.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anything.swift; sourceTree = "<group>"; };
 		FFD5AE4025BB478C00F41A26 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
 		FFD5AE4125BB478C00F41A26 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		FFD5AE4225BB478C00F41A26 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
@@ -191,6 +177,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				FF8168FF25BE2F51004477A3 /* anything.swift */,
 				FFD5AE3F25BB478C00F41A26 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* weathery */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -198,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				9F4E4AA771113AED1EF62DD5 /* Pods */,
+				FF8168FE25BE2F51004477A3 /* weathery-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -350,7 +338,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1230;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -396,23 +384,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD5AE5025BB478C00F41A26 /* Fontisto.ttf in Resources */,
-				FFD5AE5B25BB478C00F41A26 /* FontAwesome.ttf in Resources */,
-				FFD5AE5725BB478C00F41A26 /* Foundation.ttf in Resources */,
-				FFD5AE5A25BB478C00F41A26 /* FontAwesome5_Regular.ttf in Resources */,
-				FFD5AE5825BB478C00F41A26 /* Ionicons.ttf in Resources */,
-				FFD5AE5D25BB478C00F41A26 /* EvilIcons.ttf in Resources */,
-				FFD5AE5325BB478C00F41A26 /* Entypo.ttf in Resources */,
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				FFD5AE5C25BB478C00F41A26 /* Zocial.ttf in Resources */,
-				FFD5AE5E25BB478C00F41A26 /* SimpleLineIcons.ttf in Resources */,
-				FFD5AE5225BB478C00F41A26 /* Feather.ttf in Resources */,
-				FFD5AE5125BB478C00F41A26 /* Octicons.ttf in Resources */,
-				FFD5AE5425BB478C00F41A26 /* FontAwesome5_Brands.ttf in Resources */,
-				FFD5AE5625BB478C00F41A26 /* AntDesign.ttf in Resources */,
-				FFD5AE5F25BB478C00F41A26 /* MaterialIcons.ttf in Resources */,
-				FFD5AE5925BB478C00F41A26 /* FontAwesome5_Solid.ttf in Resources */,
-				FFD5AE5525BB478C00F41A26 /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				FF81690025BE2F51004477A3 /* anything.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 364FDA8406F2CD8BE598AAA7 /* Pods-weathery-weatheryTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -769,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 648EF0FEE1E9E881100E1AF7 /* Pods-weathery-weatheryTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = weatheryTests/Info.plist;
@@ -802,6 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = weathery;
+				SWIFT_OBJC_BRIDGING_HEADER = "weathery-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -824,6 +799,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = weathery;
+				SWIFT_OBJC_BRIDGING_HEADER = "weathery-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
