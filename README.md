@@ -17,8 +17,6 @@
 
 ![](gifs/appView.gif)
 
-This is the result of the test requested as part of Platform Builders hiring process.
-
 ## Made with
 
 The project was built using TypeScript with [React Native](https://reactnative.dev/) 0.63.4.
@@ -124,7 +122,7 @@ To improve performance i've made little choices that won't impact an App with th
 
 ## How to run
 
-I've made the App using IOS simulator to be faster since i only had my free time, SO I HIGHLY RECOMMEND THE IPHONE 11 to be the test device. I haven't tested on Android and other device screens because i chose to invest my time on making a more complex app to show my line of thoughts. I would totally give a little more attention to responsiveness and screen sizes using react-native-screens but due to lack of time i thought it wouldn't affect the test result, but if you guys think is essential, i can add it haha.
+I've made the App using IOS simulator to be faster since i only had my free time, SO I HIGHLY RECOMMEND THE IPHONE 11 to be the test device. I haven't tested on Android and other device screens because i chose to invest my time on making a more complex app. I would totally give a little more attention to responsiveness and screen sizes using react-native-screens but due to lack of time i thought it wouldn't affect the result, but i'm planning on doing it as the next steps.
 
 PS: REMEMBER TO ALLOW LOCATION SERVICES AND SET A CUSTOM LOCATION ON - SIMULATOR -> FEATURES -> LOCATION. :P
 
@@ -176,7 +174,7 @@ npm run ios  or npx react-native run-ios
 ```
 
 About tests ...
-Since i'm working on weekday, i made all i could to deliver it by doing on my freetime, barely haven't slept haha, so i chose to deliver faster and a more complex app, but, that doesnt mean i dont value tests, by the opposite, we can chat about it :).
+Since i'm working on weekday, i made all i could to finish it by doing on my freetime, barely haven't slept haha, so i chose to deliver faster and a more complex app, but, that doesnt mean i dont value tests, by the opposite, chat me about it :). It will be my next steps.
 
 ## Contacts
 
@@ -188,4 +186,4 @@ linkedin: http://www.linkedin.com/in/kcotias
 
 instagram: @kaiandev
 
-### Thanks a lot for your time :) Looking forward to be on the same boat soon!
+### Thanks a lot for your time :)
