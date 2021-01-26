@@ -1,16 +1,14 @@
 import React from 'react';
+import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { RecoilRoot } from 'recoil';
 import Router from './navigation';
 
-// import { Platform } from 'react-native';
-
-// if (Platform.OS === 'android') {
-//   // only android needs polyfill
-//   require('intl'); // import intl object
-//   require('intl/locale-data/jsonp/en-US'); // load the required locale details
-// }
+if (Platform.OS === 'android') {
+  require('intl');
+  require('intl/locale-data/jsonp/en-US');
+}
 
 const App = () => {
   return (
