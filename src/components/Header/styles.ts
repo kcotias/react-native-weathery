@@ -16,4 +16,11 @@ export default StyleSheet.create({
     color: Colors.FONT_DARK,
     alignSelf: 'center',
   },
+  flex: {
+    flex: 1,
+  },
+  buttonWrapper: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
 });
