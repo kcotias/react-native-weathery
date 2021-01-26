@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { WeatherState, UserLocationState } from './types';
+import { WeatherState, UserLocationState } from 'types';
 
 export const userLocationState = atom<UserLocationState>({
   key: 'userLocationState',
@@ -12,7 +12,6 @@ export const userLocationState = atom<UserLocationState>({
 export const weatherState = atom<WeatherState>({
   key: 'weatherState',
   default: {
-    loading: true,
-    weather: null,
+    weather: [],
   },
 });
