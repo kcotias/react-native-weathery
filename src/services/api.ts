@@ -1,16 +1,15 @@
 import axios from 'axios';
+import { API_URL, APPID } from '@env';
 
-const api = axios.create({ baseURL: 'https://api.openweathermap.org/data/2.5' });
+const api = axios.create({ baseURL: API_URL });
 
 const defaultParams = {
-  appid: 'b9e3af75f06b113cd5904abe1b4de925',
+  appid: APPID,
   units: 'metric',
 };
 
-export const getWeatherInfo = ({ lat, lon }) => {
-  return api.get('/weather', { params: { ...defaultParams, lat, lon } });
-};
-
-export const getForecastInfo = ({ lat, lon }) => {
-  return api.get('/forecast/daily', { params: { ...defaultParams, lat, lon, cnt: 15 } });
+export const getWeatherInfo = (lat, lon) => {
+  return api.get('/onecall', {
+    params: { ...defaultParams, lat, lon, exclude: 'minutely,hourly,alerts' },
+  });
 };

@@ -25,34 +25,25 @@ export const getCurrentPosition = (): Promise<LocationData> => {
   );
 };
 
-export const requestGeolocationPermissions = async () => {
-  if (Platform.OS === 'ios') {
-    await Geolocation.requestAuthorization('whenInUse');
-  } else {
-    return PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION);
-  }
-};
+export const requestLocationPermissions = async () =>
+  Platform.OS === 'ios'
+    ? Geolocation.requestAuthorization('whenInUse')
+    : PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION);
 
-export const openAppSettings = () => {
-  if (Platform.OS === 'ios') {
-    Linking.canOpenURL('app-settings:')
-      .then(() => {
-        Linking.openURL('App-Prefs:Privacy');
-      })
-      .catch(() => {});
-  } else {
-    Linking.openSettings();
-  }
-};
+export const openSettings = () =>
+  Platform.OS === 'ios'
+    ? Linking.canOpenURL('app-settings:')
+        .then(() => {
+          Linking.openURL('App-Prefs:Privacy');
+        })
+        .catch(() => {})
+    : Linking.openSettings();
 
-export const handleLocationError = () => {
+export const handleLocationDenied = () => {
   return Alert.alert(
     'Permission required',
-    'Location is requires to access our app, head to your location settings and allow weatherapp.',
-    [
-      { text: 'Cancel', onPress: () => {}, style: 'cancel' },
-      { text: 'Open Settings', onPress: openAppSettings },
-    ],
+    'Location is required to access our app, head to your settings and allow weatherapp.',
+    [{ text: 'Open Settings', onPress: openSettings }],
     { cancelable: true },
   );
 };
