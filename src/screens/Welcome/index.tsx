@@ -1,23 +1,49 @@
 import React, { useEffect } from 'react';
-import { Alert, ImageBackground } from 'react-native';
+import { ImageBackground } from 'react-native';
+import { Button } from 'components';
 import LinearGradient from 'react-native-linear-gradient';
-import { Button } from '@components/index';
-import { getWeatherInfo, getForecastInfo } from 'services/api';
-import { getCurrentPosition } from 'services/geolocation';
 
-interface Props {}
+import {
+  getCurrentPosition,
+  handleLocationDenied,
+  requestLocationPermissions,
+} from 'services/geolocation';
 
-const Welcome = ({ navigation }: Props) => {
+import { userLocationState } from 'recoil/atoms';
+import { useRecoilState } from 'recoil';
+
+import styles from './styles';
+
+const backgroundImg = require('assets/imgs/welcome.png');
+
+const Welcome = ({ navigation }) => {
+  // Global State
+  const [userLocation, setUserLocation] = useRecoilState(userLocationState);
+
+  // Check user permissions and get lat and lon
   const getUserLocation = async () => {
     try {
-      const response = await getCurrentPosition();
-      // alert(JSON.stringify(response));
-      if (response.ok) {
-        alert('foi');
+      const { ok, latitude, longitude } = await getCurrentPosition();
+
+      if (ok) {
+        await setUserLocation({
+          latitude,
+          longitude,
+        });
+      } else {
+        const locationPermission = await requestLocationPermissions();
+        if (locationPermission === 'granted') {
+          const { latitude, longitude } = await getCurrentPosition();
+          await setUserLocation({
+            latitude,
+            longitude,
+          });
+        } else {
+          handleLocationDenied();
+        }
       }
-      // test request permission
-    } catch {
-      console.log('deru ruim');
+    } catch (er) {
+      console.log(er);
     }
   };
 
@@ -27,21 +53,12 @@ const Welcome = ({ navigation }: Props) => {
 
   return (
     <LinearGradient style={{ flex: 1 }} colors={['#5D50FE', '#8572FC']}>
-      <ImageBackground
-        resizeMode="cover"
-        style={{
-          flex: 1,
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-          padding: 16,
-          paddingBottom: 30,
-        }}
-        source={require('@assets/welcome.png')}>
+      <ImageBackground resizeMode="cover" style={styles.background} source={backgroundImg}>
         <Button
           rounded
           title="WEATHERY!"
           onPress={() => navigation.navigate('Home')}
-          titleStyle={{ color: '#130E51', fontWeight: '600' }}
+          titleStyle={styles.buttonStyles}
         />
       </ImageBackground>
     </LinearGradient>
