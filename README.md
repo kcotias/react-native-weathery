@@ -83,7 +83,7 @@ I've decided to use FC (functional components) all over the app instead of the c
 
 For styling i didn't used any helper such as Styled Components, only to show my knowledge on css-in-js pattern itself.
 
-A global state management wasn't needed, but since this was a test, i've chose to use one just for demonstration purposes, and thats why i've made the WELCOME screen - which is totally unecessary -, but i've wanted to show some state sharing through screens using recoil. Annnnd, why recoil? It's a fact that the community takes redux as the silver bullet of state management, but i don't think it is the best option always, specially for smaller and less complex apps. We have plenty of options that are easier to setup and less complex work with, like: mobx, and recoil. Redux is fairly verbous, and if we do not pay attention we can end up bringing hell to our apps through its action calls and immutability. I was about to use mobx, a derivative state management, but i thought it would be fun to go with something new. Recoil is fast, simple, and its made by facebook, probably will be the future for state management in React. (I hope haha)
+A global state management wasn't needed, but since this was a sample project, i've chose to use one just for demonstration purposes, and thats why i've made the WELCOME screen - which is totally unecessary -, but i've wanted to show some state sharing through screens using recoil. Annnnd, why recoil? It's a fact that the community takes redux as the silver bullet of state management, but i don't think it is always the best option, specially for smaller and less complex apps. We have plenty of options that are easier to setup and less complex to work with like mobx, and recoil. Redux is fairly verbous, and if we do not pay attention we can end up bringing hell to our apps through its action calls and immutability. I was about to use mobx, a derivative state management, but i thought it would be fun to go with something new. Recoil is fast, simple, and its made by facebook, probably will be the future for state management in React. (I hope haha)
 
 To improve performance i've made little choices that won't impact an App with this size, but in a bigger App they would've made a great impact:
 
@@ -174,7 +174,7 @@ npm run ios  or npx react-native run-ios
 ```
 
 About tests ...
-Since i'm working on weekday, i made all i could to finish it by doing on my freetime, barely haven't slept haha, so i chose to deliver faster and a more complex app, but, that doesnt mean i dont value tests, by the opposite, chat me about it :). It will be my next steps.
+Since i'm working on weekday, i made all i could to finish it by doing on my freetime, barely haven't slept haha, so i chose to deliver faster and a more complex app, but, that doesnt mean i dont value tests, by the opposite, chat me about it :). It will surely be my next steps.
 
 ## Contacts
 
