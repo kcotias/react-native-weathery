@@ -14,7 +14,6 @@ export default StyleSheet.create({
     fontWeight: '700',
     fontSize: 17,
     color: Colors.FONT_DARK,
-    alignSelf: 'center',
   },
   flex: {
     flex: 1,
