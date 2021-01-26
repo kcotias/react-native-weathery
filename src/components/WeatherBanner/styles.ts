@@ -3,17 +3,19 @@ import { Colors } from 'styles';
 
 export default StyleSheet.create({
   container: {
-    width: 374,
+    width: '100%',
     height: 314,
     backgroundColor: Colors.PRIMARY,
     borderRadius: 40,
     margin: 20,
+    alignSelf: 'center',
   },
   backgroundContainer: {
-    width: 374,
+    width: '100%',
     height: 314,
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'center',
   },
   background: {
     borderRadius: 40,

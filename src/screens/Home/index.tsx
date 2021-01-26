@@ -1,6 +1,6 @@
 // React/Component imports
 import React, { useState, useEffect } from 'react';
-import { SafeAreaView, ScrollView } from 'react-native';
+import { SafeAreaView, ScrollView, View } from 'react-native';
 import { Header, Filter, WeatherBanner, WeatherList } from 'components';
 import SkeletonContent from 'react-native-skeleton-content-nonexpo';
 
@@ -49,20 +49,22 @@ const Home = () => {
       <SafeAreaView>
         <Header location={locationName} onUpdatePress={getUserWeather} />
         <Filter filters={filters} activeButton={activeFilter} onButtonPress={setActiveFilter} />
-        {loading ? (
-          <SkeletonContent
-            containerStyle={styles.skeleton}
-            layout={[{}].map((item, index) => {
-              return {
-                ...styles.skeleton,
-                key: index,
-              };
-            })}
-            isLoading
-          />
-        ) : (
-          <WeatherBanner filter={activeFilter} weather={weather} />
-        )}
+        <View style={{ paddingHorizontal: 20 }}>
+          {loading ? (
+            <SkeletonContent
+              containerStyle={styles.skeleton}
+              layout={[{}].map((item, index) => {
+                return {
+                  ...styles.skeleton,
+                  key: index,
+                };
+              })}
+              isLoading
+            />
+          ) : (
+            <WeatherBanner filter={activeFilter} weather={weather} />
+          )}
+        </View>
         <WeatherList weatherList={weather?.daily} listLength={7} loading={loading} />
       </SafeAreaView>
     </ScrollView>

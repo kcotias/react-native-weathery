@@ -10,9 +10,10 @@ export default StyleSheet.create({
     paddingTop: 20,
   },
   skeleton: {
-    width: 374,
+    width: '100%',
     height: 314,
     borderRadius: 40,
     alignSelf: 'center',
+    marginHorizontal: 20,
   },
 });
