@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -13,5 +13,5 @@ export default StyleSheet.create({
   title: {
     fontSize: 16,
     fontWeight: '500',
-  },
+  } as TextStyle,
 });

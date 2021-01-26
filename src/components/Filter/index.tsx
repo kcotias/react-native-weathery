@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Pressable } from 'react-native';
+
 import { Colors } from 'styles';
 import styles from './styles';
 
@@ -8,7 +9,7 @@ type Category = {
   title: string;
 };
 interface CategoriesListProps {
-  activeButton: number;
+  activeButton: number | null;
   onButtonPress: (id: number) => void;
   filters: Category[];
 }
@@ -45,4 +46,4 @@ const Filter: React.FC<CategoriesListProps> = ({
   );
 };
 
-export default React.memo(Filter);
+export default Filter;

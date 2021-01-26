@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Pressable, Text, View, ActivityIndicator } from 'react-native';
+
 import { Colors } from 'styles';
 import styles from './styles';
 
