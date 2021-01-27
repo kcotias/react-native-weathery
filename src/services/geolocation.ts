@@ -43,7 +43,10 @@ export const handleLocationDenied = () => {
   return Alert.alert(
     'Permission required',
     'Location is required to access our app, head to your settings and allow weatherapp.',
-    [{ text: 'Open Settings', onPress: openSettings }],
+    [
+      { text: 'Done', onPress: () => {}, style: 'cancel' },
+      { text: 'Open Settings', onPress: openSettings },
+    ],
     { cancelable: true },
   );
 };
