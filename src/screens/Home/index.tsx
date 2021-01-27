@@ -26,7 +26,8 @@ const Home = () => {
 
   // Assignments
   const { weather } = weatherData;
-  const locationName = weather?.timezone?.replace('/', ', ');
+  const locationData = weather?.timezone?.split('/');
+  const locationName = locationData && locationData[1]?.replace('_', ' ');
 
   // Get user Weather based on lat and lon
   const getUserWeather = async () => {

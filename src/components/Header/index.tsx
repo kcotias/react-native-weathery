@@ -13,7 +13,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ location, onUpdatePress }: HeaderProps) => (
   <View style={styles.container}>
-    <View style={{ flex: 2, alignItems: 'flex-end' }}>
+    <View style={styles.flex} />
+    <View style={styles.locationWrapper}>
       <Text style={styles.title}>{location}</Text>
     </View>
     <View style={styles.buttonWrapper}>

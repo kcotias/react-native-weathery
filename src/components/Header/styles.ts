@@ -22,4 +22,8 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'flex-end',
   },
+  locationWrapper: {
+    flex: 3,
+    alignItems: 'center',
+  },
 });
