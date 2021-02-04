@@ -5,6 +5,10 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
+  safeArea: {
+    flex: 1,
+  },
+  scrollContainer: { paddingBottom: 50 },
   listArea: {
     paddingLeft: 20,
     paddingTop: 20,
@@ -15,5 +19,6 @@ export default StyleSheet.create({
     borderRadius: 40,
     alignSelf: 'center',
     marginHorizontal: 20,
+    marginTop: 10,
   },
 });

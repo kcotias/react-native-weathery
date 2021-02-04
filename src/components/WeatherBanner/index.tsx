@@ -5,6 +5,7 @@ import LottieView from 'lottie-react-native';
 import { capitalizeFirstLetter, setWeatherAnimationAsset } from 'utils/helpers';
 import { WeatherResponse } from 'types';
 import styles from './styles';
+import { iPhoneXLike } from 'utils/dimensions';
 
 const backgroundAsset = require('assets/imgs/background.png');
 
@@ -38,10 +39,10 @@ const WeatherBanner: React.FC<WeatherBannerProps> = ({ weather, filter }: Weathe
           <Text style={styles.celsius}>&#8451;</Text>
         </Text>
         <Text style={styles.weatherDescription}>{capitalizeFirstLetter(weatherDescription)}</Text>
-        <Text style={styles.humidityTitle}>Humidity</Text>
+        <Text style={styles.humidityTitle}>Humidade</Text>
         <Text style={styles.humidityValue}>{weather?.current?.humidity}</Text>
         <LottieView
-          style={styles.animation}
+          style={[styles.animation, !iPhoneXLike && styles.smallerAnimation]}
           source={setWeatherAnimationAsset(weatherMainStatus)}
           autoPlay
           loop

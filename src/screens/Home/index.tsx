@@ -46,29 +46,33 @@ const Home = () => {
   }, []);
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <SafeAreaView>
-        <Header location={locationName} onUpdatePress={getUserWeather} />
-        <Filter filters={filters} activeButton={activeFilter} onButtonPress={setActiveFilter} />
-        <View style={{ paddingHorizontal: 20 }}>
-          {loading ? (
-            <SkeletonContent
-              containerStyle={styles.skeleton}
-              layout={[{}].map((item, index) => {
-                return {
-                  ...styles.skeleton,
-                  key: index,
-                };
-              })}
-              isLoading
-            />
-          ) : (
-            <WeatherBanner filter={activeFilter} weather={weather} />
-          )}
-        </View>
-        <WeatherList weatherList={weather?.daily} listLength={7} loading={loading} />
+    <View style={styles.container}>
+      <SafeAreaView style={styles.safeArea}>
+        <ScrollView
+          contentContainerStyle={styles.scrollContainer}
+          showsVerticalScrollIndicator={false}>
+          <Header location={locationName} onUpdatePress={getUserWeather} />
+          <Filter filters={filters} activeButton={activeFilter} onButtonPress={setActiveFilter} />
+          <View style={{ paddingHorizontal: 20 }}>
+            {loading ? (
+              <SkeletonContent
+                containerStyle={styles.skeleton}
+                layout={[{}].map((item, index) => {
+                  return {
+                    ...styles.skeleton,
+                    key: index,
+                  };
+                })}
+                isLoading
+              />
+            ) : (
+              <WeatherBanner filter={activeFilter} weather={weather} />
+            )}
+          </View>
+          <WeatherList weatherList={weather?.daily} listLength={7} loading={loading} />
+        </ScrollView>
       </SafeAreaView>
-    </ScrollView>
+    </View>
   );
 };
 
