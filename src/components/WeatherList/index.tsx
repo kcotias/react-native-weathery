@@ -29,7 +29,7 @@ const WeatherList = ({ weatherList, listLength, loading }: WeatherListProps) => 
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Next {listLength} Days</Text>
+      <Text style={[styles.header, loading && { paddingTop: 30 }]}>Próximos {listLength} Dias</Text>
       {loading ? (
         <SkeletonContent
           containerStyle={{ flexDirection: 'row' }}

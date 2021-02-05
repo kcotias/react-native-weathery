@@ -6,6 +6,7 @@ const api = axios.create({ baseURL: API_URL });
 const defaultParams = {
   appid: APPID,
   units: 'metric',
+  lang: 'pt_br',
 };
 
 export const getWeatherInfo = (lat, lon) => {

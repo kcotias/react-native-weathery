@@ -3,7 +3,7 @@ import animations from 'assets/animations';
 // HELPERS
 
 export const formatTime = (time: number | undefined): string => {
-  const dtFormat = new Intl.DateTimeFormat('en-US', {
+  const dtFormat = new Intl.DateTimeFormat('pt-BR', {
     weekday: 'long',
   });
 

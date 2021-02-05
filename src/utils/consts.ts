@@ -5,14 +5,14 @@ export const COLORS_ARRAY = ['#28E0AE', '#FF0090', '#FFAE00', '#0090FF', '#DC000
 export const filters = [
   {
     id: 0,
-    title: 'Today',
+    title: 'Hoje',
   },
   {
     id: 1,
-    title: 'Tomorrow',
+    title: 'Amanhã',
   },
   {
     id: 2,
-    title: 'Next Week',
+    title: 'Próxima Semana',
   },
 ];
